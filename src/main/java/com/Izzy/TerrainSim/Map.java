@@ -1,7 +1,13 @@
 package com.Izzy.TerrainSim;
 
-import java.util.ArrayList;
+
 
 public class Map {
-    static int [][] mapArray = new int [5][5];
+    Room NewWorld[][] = new Room [4][4];
+
+    public void NewWorld(){
+        NewWorld[0][0] = Room.startingRoom;
+
+    }
+
 }
