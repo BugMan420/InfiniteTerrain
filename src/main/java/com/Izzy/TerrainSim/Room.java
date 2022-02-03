@@ -2,6 +2,15 @@ package com.Izzy.TerrainSim;
 
 public class Room {
     private String description;
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getRoomName() {
+        return roomName;
+    }
+
     private String roomName;
 
     public Room (String name, String desc){
@@ -9,7 +18,7 @@ public class Room {
         this.roomName = name;
     }
 
-    static Room startingRoom = new Room("Starting Room","A dimly lit room with four doors in each direction."){};
-    Room emptyRoom = new Room ("Empty Room", "A room with nothing remarkable.");
-    Room treasureRoom = new Room ("Treasure Room", "A room with the treasure in it.");
+    static Room startingRoom = new Room("Starting Room","A dimly lit room with 4 doors in each direction.");
+    static Room emptyRoom = new Room ("Empty Room", "A room with nothing remarkable.");
+    static Room treasureRoom = new Room ("Treasure Room", "A room with the treasure in it.");
 }
